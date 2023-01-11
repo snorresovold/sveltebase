@@ -1,54 +1,54 @@
 <script lang="ts">
-	import { currentUser, pb } from "./page"
-  
+	import { currentUser, pb } from "../../lib/pocketbase"
+
 	let username: string;
 	let password: string;
-  
+
 	async function login() {
-	  const user = await pb.collection('users').authWithPassword(username, password);
-	  console.log(user)
+		const user = await pb.collection('users').authWithPassword(username, password);
+		console.log(user)
 	}
-  
+
 	async function signUp() {
-	  try {
+		try {
 		const data = {
-		  username,
-		  password,
-		  passwordConfirm: password,
-		  name: 'hi mom!',
+			username,
+			password,
+			passwordConfirm: password,
+			name: 'hi mom!',
 		};
 		const createdUser = await pb.collection('users').create(data);
 		await login();
-	  } catch (err) {
+		} catch (err) {
 		console.error(err)
-	  }
+		}
 	}
-  
+	
 	function signOut() {
-	  pb.authStore.clear();
+		pb.authStore.clear();
 	}
-  
-  </script>
-  
-  {#if $currentUser}
+
+</script>
+
+{#if $currentUser}
 	<p>
-	  Signed in as {$currentUser.username} 
-	  <button on:click={signOut}>Sign Out</button>
+	Signed in as {$currentUser.username} 
+	<button on:click={signOut}>Sign Out</button>
 	</p>
-  {:else}
+{:else}
 	<form on:submit|preventDefault>
-	  <input
+		<input
 		placeholder="Username"
 		type="text"
 		bind:value={username}
-	  />
-  
-	  <input 
+		/>
+
+		<input 
 		placeholder="Password" 
 		type="password" 
 		bind:value={password} 
-	  />
-	  <button on:click={signUp}>Sign Up</button>
-	  <button on:click={login}>Login</button>
+		/>
+		<button on:click={signUp}>Sign Up</button>
+		<button on:click={login}>Login</button>
 	</form>
-  {/if}
+{/if}
