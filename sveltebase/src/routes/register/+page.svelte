@@ -26,6 +26,7 @@
 	
 	function signOut() {
 		pb.authStore.clear();
+		console.log("leared")
 	}
 
 </script>
