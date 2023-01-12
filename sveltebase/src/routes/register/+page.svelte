@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentUser, pb } from "../../lib/pocketbase"
+	import { currentUser, pb } from "../../lib/utils"
 
 	let username: string;
 	let password: string;
