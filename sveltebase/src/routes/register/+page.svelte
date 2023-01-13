@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Nav from "$lib/Nav.svelte";
-	import { redirect } from "@sveltejs/kit";
-	import { currentUser, pb } from "./utils"
+	import { currentUser, pb } from "../../lib/utils"
 
 	let username: string;
 	let password: string;
@@ -21,7 +20,6 @@
 		};
 		const createdUser = await pb.collection('users').create(data);
 		await login();
-		throw redirect(303, "/login")
 		} catch (err) {
 		console.error(err)
 		}
@@ -29,7 +27,6 @@
 	
 	function signOut() {
 		pb.authStore.clear();
-		console.log("leared")
 	}
 
 </script>
