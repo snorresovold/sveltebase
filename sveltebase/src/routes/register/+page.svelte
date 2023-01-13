@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { currentUser, pb } from "../../lib/utils"
+	import Nav from "$lib/Nav.svelte";
+	import { currentUser, pb } from "./utils"
 
 	let username: string;
 	let password: string;
@@ -32,6 +33,7 @@
 </script>
 
 {#if $currentUser}
+	<Nav/>
 	<p>
 	Signed in as {$currentUser.username} 
 	<button on:click={signOut}>Sign Out</button>
