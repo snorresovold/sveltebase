@@ -76,8 +76,7 @@
 			  </h1>
 	  
 			  <p class="mt-4 leading-relaxed text-gray-500 dark:text-gray-400">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam
-				dolorum aliquam, quibusdam aperiam voluptatum.
+				Create a user for squid :)
 			  </p>
 	  
 			  <form action="#" class="mt-8 grid grid-cols-6 gap-6" on:submit|preventDefault>
