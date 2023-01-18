@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.3",
-		"pocketbase": "^0.10.0"
+		"daisyui": "^2.47.0",
+		"pocketbase": "^0.8.0-rc2"
 	}
 }
