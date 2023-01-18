@@ -1,5 +1,5 @@
-<script>
-	export let form;
+<script lang="ts">
+	export let form: any;
 </script>
 
 <div class="flex flex-col items-center h-full w-full">
