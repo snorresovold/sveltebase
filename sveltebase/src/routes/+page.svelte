@@ -1,3 +1,10 @@
-<h1 class="text-3xl font-bold underline">
-    Hello world!
+
+
+<script lang="ts">
+	 export let data: any;
+     console.log(data)
+</script>
+
+<h1 class="text-3xl font-bold">
+	Welcome to the SvelteKit & PocketBase Project, {data?.profile?.name || ''}! 👋
 </h1>
