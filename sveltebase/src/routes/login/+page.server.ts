@@ -3,6 +3,7 @@ import { error, redirect } from '@sveltejs/kit';
 export const actions = {
 	login: async ({ request, locals }: any) => {
 		const body = Object.fromEntries(await request.formData());
+
 		try {
 			await locals.pb.collection('users').authWithPassword(body.email, body.password);
 			if (!locals.pb?.authStore?.model?.verified) {
