@@ -39,6 +39,6 @@ onDestroy(() => {
 
 <div class="h-56 grid grid-cols-6 gap-4 content-start">
 {#each products as product (product.id)}
-    <Product price={product.price} name={product.name} user={product.expand?.user?.username} link={product.link} desc={product.desc}/>
+    <Product price={product.price} name={product.name} user={product.expand?.user?.username} link={product.id} desc={product.desc}/>
 {/each}
 </div>

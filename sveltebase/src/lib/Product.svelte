@@ -5,7 +5,7 @@
     export let link: any;
     export let desc: any;
 </script>
-<a href={link} class="block group border-4 border-black">
+<a href={"products/" + link} class="block group border-4 border-black">
     <img
         class="avatar"
         src={`https://avatars.dicebear.com/api/identicon/${user}.svg`}

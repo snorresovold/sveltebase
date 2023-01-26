@@ -4,6 +4,6 @@
 </script>
 
 <h1>{product.name}</h1>
-
 <p>{product.price}</p>
 <p>{product.desc}</p>
+<p>{product.expand?.user?.username}</p>
