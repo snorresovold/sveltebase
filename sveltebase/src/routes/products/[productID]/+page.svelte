@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let data;
-	const { product } = data;
+    export let data: any;
+    $: ({ product } = data);
 </script>
 
 <h1>{product.name}</h1>
@@ -8,12 +8,12 @@
 <p>{product.desc}</p>
 <p>{product.expand?.user?.username}</p>
 <img
-	class="avatar"
-	src={`https://avatars.dicebear.com/api/identicon/${product.expand?.user?.username}.svg`}
-	alt="avatar"
-	width="40px"
+    class="avatar"
+    src={`https://avatars.dicebear.com/api/identicon/${product.expand?.user?.username}.svg`}
+    alt="avatar"
+    width="40px"
 />
-{#each product as x}
+{#each product.expand.image as x}
 	<img
 		class="avatar"
 		src={x.url}
