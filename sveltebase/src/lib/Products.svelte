@@ -15,19 +15,6 @@ onMount(async () => {
     products = resultList.items;
 
     // Subscribe to realtime products
-    unsubscribe = await pb
-    .collection('products')
-    .subscribe('*', async ({ action, record }) => {
-        if (action === 'create') {
-        // Fetch associated use
-        const user = await pb.collection('users').getOne(record.user);
-        record.expand = { user };
-        products = [...products, record];
-        }
-        if (action === 'delete') {
-        products = products.filter((m) => m.id !== record.id);
-        }
-    });
 });
 
 // Unsubscribe from realtime products

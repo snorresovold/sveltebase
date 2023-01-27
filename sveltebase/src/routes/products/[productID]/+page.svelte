@@ -13,15 +13,11 @@
 	alt="avatar"
 	width="40px"
 />
-<img
-	class="avatar"
-	src={product.expand?.image[0]?.url}
-	alt="avatar"
-	width="40px"
-/>
-<img
-	class="avatar"
-	src={product.expand?.image[1]?.url}
-	alt="avatar"
-	width="40px"
-/>
+{#each product as x}
+	<img
+		class="avatar"
+		src={x.url}
+		alt="avatar"
+		width="40px"
+	/>
+{/each}
