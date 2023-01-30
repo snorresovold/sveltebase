@@ -20,6 +20,6 @@
       {name}
     </h3>
     <p>{desc}</p>
-    <p class="mt-1 text-sm text-gray-700">{price}</p>
+    <p class="mt-1 text-sm text-gray-700">{price} $</p>
   </div>
 </a>
