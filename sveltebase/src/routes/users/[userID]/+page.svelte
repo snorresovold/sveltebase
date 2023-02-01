@@ -1,7 +1,10 @@
 <script lang="ts">
+	import Product from "$lib/Product.svelte";
     export let data: any;
     $: ({ user } = data);
 </script>
+
+<p>{user.username}</p>
 
 <img
     class="avatar"
@@ -9,4 +12,3 @@
     alt="avatar"
     width="40px"
 />
-<p>{user.username}</p>
