@@ -9,3 +9,4 @@
     alt="avatar"
     width="40px"
 />
+<p>{user.username}</p>
