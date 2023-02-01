@@ -2,6 +2,7 @@
 	import Product from "$lib/Product.svelte";
     export let data: any;
     $: ({ user } = data);
+    console.log(data)
 </script>
 
 <p>{user.username}</p>
@@ -12,5 +13,3 @@
     alt="avatar"
     width="40px"
 />
-
-<p>Showing {user.expand.products.length()}</p>
