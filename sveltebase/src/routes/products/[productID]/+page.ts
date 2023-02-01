@@ -5,8 +5,7 @@ export const load = async ({ params }: any) => {
     const fetchProduct = async (id: string) => {
         const product = await pb.collection('products').getOne(id, {
             expand: "user, image"
-        },
-        )
+        },)
         console.log(product)
         return product
     }

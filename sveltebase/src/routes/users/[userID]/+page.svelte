@@ -12,3 +12,5 @@
     alt="avatar"
     width="40px"
 />
+
+<p>Showing {user.expand.products.length()}</p>
