@@ -9,7 +9,7 @@
 
 <img
     class="avatar"
-    src={`https://avatars.dicebear.com/api/identicon/${user.expand?.user?.id}.svg`}
+    src={`https://avatars.dicebear.com/api/identicon/${user.id}.svg`}
     alt="avatar"
     width="40px"
 />
