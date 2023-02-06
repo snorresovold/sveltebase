@@ -2,14 +2,14 @@
 	import Product from "$lib/Product.svelte";
     export let data: any;
     $: ({ user } = data);
-    console.log(data)
+    //console.log(data)
 </script>
 
 <p>{user.username}</p>
 
 <img
     class="avatar"
-    src={`https://avatars.dicebear.com/api/identicon/${user.expand?.user?.username}.svg`}
+    src={`https://avatars.dicebear.com/api/identicon/${user.expand?.user?.id}.svg`}
     alt="avatar"
     width="40px"
 />

@@ -1,17 +1,15 @@
 <script lang="ts">
+	import UserIcon from "./UserIcon.svelte";
+
     export let price: any;
     export let name: any;
-    export let user: any;
+    export let user: string;
     export let link: any;
     export let desc: any;
 </script>
 <a href={"products/" + link} class="block group border-4 border-black">
-  <img
-      class="avatar"
-      src={`https://avatars.dicebear.com/api/identicon/${user}.svg`}
-      alt="avatar"
-      width="40px"
-  />
+
+  <UserIcon id={user} />
 
   <div class="mt-3">
     <h3
