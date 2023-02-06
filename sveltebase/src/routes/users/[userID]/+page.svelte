@@ -14,7 +14,6 @@
     width="40px"
 />
 
-
-{#each user.expand as product}
+{#each user.expand["products(user)"] as product}
     <Product price={product.price} name={product.name} user={product.user} link={product.link}  desc={product.desc}/>
 {/each}
