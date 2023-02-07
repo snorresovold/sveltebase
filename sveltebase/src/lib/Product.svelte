@@ -1,6 +1,5 @@
 <script lang="ts">
 	import UserIcon from "./UserIcon.svelte";
-
     export let price: any;
     export let name: any;
     export let user: string;
