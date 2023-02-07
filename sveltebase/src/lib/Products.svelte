@@ -1,6 +1,4 @@
 <script lang="ts">
-import { onMount, onDestroy } from 'svelte';
-import { currentUser, pb } from './pocketbase';
 import Product from './Product.svelte';
 
 export let products: any[] = [];
