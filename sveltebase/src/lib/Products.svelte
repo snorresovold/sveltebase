@@ -24,7 +24,7 @@ onDestroy(() => {
 
 </script>
 
-<div class="h-56 grid grid-cols-6 gap-4 content-start">
+<div class="h-56 grid grid-cols-3 content-start">
 {#each products as product (product.id)}
     <Product price={product.price} name={product.name} user={product.expand?.user?.id} link={product.id} desc={product.desc} />
 {/each}
