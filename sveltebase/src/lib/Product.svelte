@@ -6,7 +6,7 @@
     export let link: any;
     export let desc: any;
 </script>
-<div class="block group border-4 border-black w-1/4">
+<div class="block group border-4 border-black m-4">
   <a href={"/products/" + link} >
 
     <UserIcon id={user} />

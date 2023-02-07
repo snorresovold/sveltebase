@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Product from "$lib/Product.svelte";
+	import Products from "$lib/Products.svelte";
     export let data: any;
     $: ({ user } = data);
     //console.log(data)
@@ -13,7 +13,9 @@
     alt="avatar"
     width="40px"
 />
-
+<!--
 {#each user.expand["products(user)"] as product}
     <Product price={product.price} name={product.name} user={product.user} link={product.id}  desc={product.desc}/>
 {/each}
+-->
+<Products products={user.expand["products(user)"]} />
