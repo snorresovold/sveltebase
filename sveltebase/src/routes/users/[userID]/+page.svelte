@@ -15,5 +15,5 @@
 />
 
 {#each user.expand["products(user)"] as product}
-    <Product price={product.price} name={product.name} user={product.user} link={product.link}  desc={product.desc}/>
+    <Product price={product.price} name={product.name} user={product.user} link={product.id}  desc={product.desc}/>
 {/each}
