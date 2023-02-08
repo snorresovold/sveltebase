@@ -2,6 +2,7 @@
 	import Products from "$lib/Products.svelte";
 	import { onMount, onDestroy } from 'svelte';
 	import { currentUser, pb } from '$lib/pocketbase';
+	import { p } from "vitest/dist/index-5aad25c1";
 
 	let products: any[]
 	let unsubscribe: () => void;
@@ -21,6 +22,6 @@
 		unsubscribe?.();
 	});
 
-
 </script>
 <Products products={products}/>
+<p>helvete</p>
