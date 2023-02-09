@@ -23,4 +23,3 @@
 
 </script>
 <Products products={products}/>
-<p>helvete</p>
