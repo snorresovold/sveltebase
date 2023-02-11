@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Check route
-        run: ls
+      - name: Get to right directory
+        run: cd sveltebase/
       - name: Install dependencies
         run: npm i
       - name: Install Playwright Browsers
