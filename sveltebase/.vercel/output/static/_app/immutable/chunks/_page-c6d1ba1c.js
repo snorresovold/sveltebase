@@ -1,1 +1,0 @@
-import{p as c}from"./pocketbase-ad6b1b08.js";const r=async({params:o})=>({product:await(async e=>{const t=await c.collection("products").getOne(e,{expand:"user, image"});return console.log(t),t})(o.productID)}),p=Object.freeze(Object.defineProperty({__proto__:null,load:r},Symbol.toStringTag,{value:"Module"}));export{p as _,r as l};
