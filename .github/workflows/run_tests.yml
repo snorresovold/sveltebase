@@ -6,6 +6,7 @@ on:
     branches: [main, master, dev]
 jobs:
   test:
+    run: ls
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
