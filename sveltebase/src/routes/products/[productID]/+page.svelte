@@ -14,5 +14,5 @@ import UserIcon from "$lib/UserIcon.svelte";
 
 
 {#each product.expand["lessons(product)"] as lesson}
-    <Lesson name={lesson.name} desc={lesson.desc} price={lesson.price} />
+    <Lesson duration={lesson.duration} start_time={lesson.start_time} price={lesson.total_price} />
 {/each}
