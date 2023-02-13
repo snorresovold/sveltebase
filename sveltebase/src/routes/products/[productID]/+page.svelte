@@ -12,7 +12,8 @@ import UserIcon from "$lib/UserIcon.svelte";
 <p>{product.expand?.user?.username}</p>
 <UserIcon id={product.expand?.user?.id} />
 
-
-{#each product.expand["lessons(product)"] as lesson}
-    <Lesson duration={lesson.duration} start_time={lesson.start_time} price={lesson.total_price} />
-{/each}
+<div class="grid grid-cols-2">
+    {#each product.expand["lessons(product)"] as lesson}
+        <Lesson duration={lesson.duration} start_time={lesson.start_time} price={lesson.total_price} />
+    {/each}
+</div>
