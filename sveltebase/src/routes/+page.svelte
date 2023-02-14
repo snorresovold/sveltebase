@@ -24,3 +24,4 @@
 </script>
 <h1>Welcome to SvelteKit</h1>
 <Products products={products}/>
+<h1>Test test</h1>
