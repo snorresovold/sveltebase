@@ -22,6 +22,5 @@
 	});
 
 </script>
-<h1>Welcome to SvelteKit</h1>
+<h1>This works, lets goo</h1>
 <Products products={products}/>
-<h1>Test test</h1>
