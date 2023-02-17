@@ -22,5 +22,5 @@
 	});
 
 </script>
-<h1>This works, lets goo</h1>
+his works, lets goo</h1>
 <Products products={products}/>
