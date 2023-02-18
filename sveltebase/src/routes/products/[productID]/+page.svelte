@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Lesson from "$lib/Lesson.svelte";
-import UserIcon from "$lib/UserIcon.svelte";
+  import UserIcon from "$lib/UserIcon.svelte";
 
     export let data: any;
     $: ({ product } = data);

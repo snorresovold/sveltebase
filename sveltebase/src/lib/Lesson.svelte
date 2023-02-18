@@ -9,7 +9,6 @@
 </script>
 
 <div class="block group border-4 border-black m-4">
-    <a href={"/products/"} >
         
         <div class="mt-3">
         <h3
@@ -19,6 +18,6 @@
         </h3>
         <p>{duration} minutes</p>
         <p class="mt-1 text-sm text-gray-700">{price} $</p>
-        </div>
-    </a>
+        <button>Buy now</button>
+       </div>
 </div>
