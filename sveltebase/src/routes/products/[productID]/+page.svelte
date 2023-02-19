@@ -13,6 +13,7 @@
 <UserIcon id={product.expand?.user?.id} />
 
 <div class="grid grid-cols-2 ml-8 mr-8">
+    <h1>YOO</h1>
     {#each product.expand["lessons(product)"] as lesson}
         <Lesson duration={lesson.duration} start_time={lesson.start_time} price={lesson.total_price} />
     {/each}
