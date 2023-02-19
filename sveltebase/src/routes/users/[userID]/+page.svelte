@@ -1,13 +1,20 @@
 <script lang="ts">
-	import Products from "$lib/Products.svelte";
 	import Product from "$lib/Product.svelte";
+    import { currentUser } from "$lib/pocketbase";
     export let data: any;
     $: ({ user } = data);
-    //console.log(data)
+    if (data.user.id == $currentUser?.id) {
+        console.log("yo, this is your page")
+    } else {
+        console.log("not your page")
+    }
 </script>
 
 <p>{user.username}</p>
 
+{#if user.id ?? $currentUser?.id}
+    <button class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75">Create more</button>
+{/if}
 <img
     class="avatar"
     src={`https://avatars.dicebear.com/api/identicon/${user.id}.svg`}

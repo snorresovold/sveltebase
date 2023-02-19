@@ -1,6 +1,6 @@
 <script lang="ts">
     export let id: string;
-    console.log(id)
+    //console.log(id)
 </script>
 
 <div>
