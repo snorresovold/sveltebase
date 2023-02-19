@@ -13,7 +13,7 @@
 <p>{user.username}</p>
 
 {#if user.id ?? $currentUser?.id}
-    <button class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75">Create more</button>
+    <button class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700">Create more</button>
 {/if}
 <img
     class="avatar"
