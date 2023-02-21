@@ -11,14 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      working-directory: ./sveltebase
         with:
           node-version: 16.14.2
       - name: Install dependencies
+        working-directory: ./sveltebase
         run: npm ci
       - name: Install Playwright Browsers
+        working-directory: ./sveltebase
         run: npx playwright install --with-deps
       - name: Run Playwright tests
+        working-directory: ./sveltebase
         run: npx playwright test
       - uses: actions/upload-artifact@v3
         if: always()
