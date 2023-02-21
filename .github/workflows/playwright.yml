@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Sveltebase
         working-directory: ./sveltebase
-        run: dev
+        run: npm dev
 
       - name: Run Playwright tests
         working-directory: ./sveltebase
