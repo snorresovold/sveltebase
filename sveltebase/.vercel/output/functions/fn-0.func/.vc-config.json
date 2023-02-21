@@ -1,5 +1,0 @@
-{
-	"runtime": "nodejs16.x",
-	"handler": "..\\Users\\SnorreSøvold\\Documents\\GitHub\\sveltebase\\sveltebase\\.svelte-kit\\vercel-tmp\\index.js",
-	"launcherType": "Nodejs"
-}
