@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Test login system', async ({ page }) => {
-  await page.goto('http://localhost:4173/');
+  await page.goto('http://localhost:4173/'); // the url of the playwright server
   await page.getByRole('link', { name: 'Login' }).click();
   await page.getByPlaceholder('username').click();
   await page.getByPlaceholder('username').fill('test');
