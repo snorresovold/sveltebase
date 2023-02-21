@@ -25,7 +25,6 @@ jobs:
         working-directory: ./sveltebase
         run: npm dev
 
-
       - name: Run Playwright tests
         working-directory: ./sveltebase
         run: npx playwright test
