@@ -16,6 +16,7 @@
         >
             {date}
         </h3>
+        <p>test</p>
         <p>{duration} minutes</p>
         <p class="mt-1 text-sm text-gray-700">{price} $</p>
         <button>Buy now</button>
