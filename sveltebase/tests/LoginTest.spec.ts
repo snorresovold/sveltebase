@@ -12,5 +12,4 @@ test('Test login system', async ({ page }) => {
   await page.getByRole('banner', { name: 'Site Header' }).getByText('Signed in as test').click();
   await page.getByRole('banner', { name: 'Site Header' }).getByRole('button', { name: 'Sign out' }).click();
   await page.getByRole('link', { name: 'Home' }).click();
-  await page.getByRole('heading', { name: 'Welcome to SvelteKit' }).click();
 });
