@@ -21,7 +21,6 @@
     alt="avatar"
     width="40px"
 />
-<h1>SUS</h1>
 
 <div class="h-56 grid grid-cols-4 content-start">
     {#each user.expand["products(user)"] as product}
