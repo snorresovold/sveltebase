@@ -27,7 +27,10 @@ jobs:
 
       - name: Run Playwright tests
         working-directory: ./sveltebase
-        run: npx playwright test
+        run: |
+                npm run dev & 
+                sleep 5
+                npx playwright test
 
       - uses: actions/upload-artifact@v3
         if: always()
