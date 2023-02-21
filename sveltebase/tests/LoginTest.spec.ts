@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Test login system', async ({ page }) => {
-  await page.goto('http://localhost:5173/');
+  await page.goto('https://sveltebase.vercel.app/');
   await page.getByRole('link', { name: 'Login' }).click();
   await page.getByPlaceholder('username').click();
   await page.getByPlaceholder('username').fill('test');
