@@ -21,13 +21,11 @@ jobs:
         working-directory: ./sveltebase
         run: npx playwright install --with-deps
 
-      - name: npm run dev
-        working-directory: ./sveltebase
-        run: npm run dev
-
       - name: Run Playwright tests
         working-directory: ./sveltebase
-        run: npx playwright test
+        run: |
+              npm run dev
+              npx playwright test
 
       - uses: actions/upload-artifact@v3
         if: always()
