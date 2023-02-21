@@ -16,8 +16,14 @@ jobs:
       - name: Cd into sveltebase
         run: cd sveltebase
 
-      - name: Install dependencies
+      - name: ls
         run: ls
+
+      - name: Cd into sveltebase 2
+        run: cd sveltebase
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Install dependencies
         run: npm ci
