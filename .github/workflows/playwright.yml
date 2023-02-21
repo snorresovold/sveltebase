@@ -21,9 +21,9 @@ jobs:
         working-directory: ./sveltebase
         run: npx playwright install --with-deps
 
-      - name: Run Sveltebase
+      - name: npm run dev
         working-directory: ./sveltebase
-        run: npm dev
+        run: npm run dev
 
       - name: Run Playwright tests
         working-directory: ./sveltebase
