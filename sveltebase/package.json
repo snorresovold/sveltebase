@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@playwright/experimental-ct-svelte": "^1.31.1",
 		"pocketbase": "^0.10.0"
 	}
 }
