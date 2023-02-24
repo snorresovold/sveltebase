@@ -6,7 +6,7 @@ const config: PlaywrightTestConfig = {
 		port: 4173
 	},
 	testDir: 'tests',
-	reporter: process.env.CI ? 'dot' : 'list', // dot for ci and list when running locally
+	reporter: 'list', // dot for ci and list when running locally
 };
 
 export default config;
