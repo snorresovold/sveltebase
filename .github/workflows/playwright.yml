@@ -20,7 +20,7 @@ jobs:
         run: npm ci
       - name: Install playwright
         working-directory: ./sveltebase
-        run: npx playwright install --with-dep
+        run: npx playwright install --with-deps
 
       - name: Install playwright
         working-directory: ./sveltebase
